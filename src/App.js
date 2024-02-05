@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Lista from './components/lista';
+import {
+ 
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+import { Title } from './components/titulo';
+import Encabezado from './components/encabezado';
+import About from './components/about';
 function App() {
+  const queryClient = new QueryClient()
   return (
+    <QueryClientProvider client={queryClient}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Encabezado></Encabezado>
+     
+      <About></About>
+      <Title>Tienda de Ropa</Title>
+      <Lista></Lista>
     </div>
+    </QueryClientProvider>
   );
 }
 

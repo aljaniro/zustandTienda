@@ -1,0 +1,34 @@
+ .about_me{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    
+    
+    text-align: justify;
+    width: 400px;
+}
+.foto1{
+   height: 300px;
+   object-fit: cover;
+   width: 350px;
+   margin-left: 20px;
+}  
+@media(max-width:600px){
+ .about_me{
+    flex-direction: column;
+    width: 100%;
+ }
+    .info{
+        
+        margin: 0 auto;
+        width: 90%;
+         
+    }
+    .foto1{
+        width: 100%;
+       padding-right: 40PX;
+    }
+}

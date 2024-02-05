@@ -1,5 +1,10 @@
 .App {
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
   text-align: center;
+  font-family: 'Cinzel', serif;
+  row-gap: 50px;
 }
 
 .App-logo {

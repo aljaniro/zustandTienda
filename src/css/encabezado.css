@@ -1,0 +1,39 @@
+.hero{
+
+    width: 100%;
+    height: auto;
+    
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    background-image: linear-gradient(to top, rgba(48, 208, 208, 0.559) 0%, rgba(51, 8, 103, 0.687) 60%),url("../asset/apparel-1850804_1280.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+position: relative;
+overflow: hidden;
+}
+.contenido{
+    height: auto;
+    width: 100%;
+    display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-self: center;
+
+}
+
+img{
+    align-self: center;
+    object-fit: cover;
+    margin: 20px auto;
+    height: 500px;
+}
+
+.enunciado{
+    text-align: center;
+    margin: 0 auto;
+    align-self: center;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+
